@@ -1,11 +1,12 @@
 {
   "name": "dbdev-it-www",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && build:prepublish",
+    "build:prepublish": "rm -rf ./dbdev-git.github.io/* && cp -r ./dist/* ./dbdev-git.github.io",
     "lint": "eslint .",
     "preview": "vite preview"
   },
