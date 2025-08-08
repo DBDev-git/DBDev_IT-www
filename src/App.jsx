@@ -4,6 +4,8 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const location = window.location.href;
+  const page = location.split(window.location.host)[1]
 
   return (
     <>
@@ -15,8 +17,8 @@ function App() {
           draggable={false}
         />
       </div>
-      <h1>⌂ DBDev_IT | Main page</h1>
-      <h2>Welcome!</h2>
+      <h1>Welcome!</h1>
+      <h2>This is <code>DBDev_IT | {(page == '/' || page == '') ? '⌂ Main' : page}</code> page</h2>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
