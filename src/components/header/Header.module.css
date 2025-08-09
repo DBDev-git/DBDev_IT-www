@@ -1,0 +1,38 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  background: #3d5162;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: fixed;
+  z-index: 100;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 16px;
+  user-select: none;
+}
+
+.title {
+  letter-spacing: 1px;
+}
+
+body > #root {
+  padding-top: 64px;
+}

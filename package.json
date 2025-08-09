@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "host": "vite --host",
     "build": "vite build && npm run build:prepublish",
     "build:prepublish": "rm -rf ./dbdev-git.github.io/* && cp -r ./dist/* ./dbdev-git.github.io",
     "lint": "eslint .",

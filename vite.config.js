@@ -10,6 +10,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        projects: resolve(__dirname, 'projects.html'),
         notFound: resolve(__dirname, '404.html'),
       }
     }
