@@ -1,10 +1,8 @@
 import ProjectItem from './ProjectItem'
-import projects from './projects.data'
+import projects from '../../assets/data/projects.data'
 
 const ProjectsPage = () => (
     <>
-        <br />
-        <br />
         <h1>Projects</h1>
         {projects.length > 0 ? projects.map(project => (
             <div key={project.id}>

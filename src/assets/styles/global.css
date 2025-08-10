@@ -1,4 +1,4 @@
-:root {
+#root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -13,10 +13,8 @@
   -moz-osx-font-smoothing: grayscale;
 
   margin: 0;
-  display: flex;
+  display: block;
   place-items: center;
-  align-items: center;
-  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -31,6 +29,7 @@ a:hover {
 }
 
 body {
+  background-color: #242424;
   margin: 0;
   display: flex;
   place-items: center;

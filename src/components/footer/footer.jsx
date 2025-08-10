@@ -16,13 +16,14 @@ const Footer = () => {
                     main
                 </a>
                 <> | </>
-                <a className={styles.info} href='/extensions.html'>
-                    extensions
-                </a>
-                <> | </>
                 <a className={styles.info} href='/projects.html'>
                     projects
                 </a>
+                <> | </>
+                <a className={styles.info} href='/extensions.html'>
+                    extensions
+                </a>
+                
             </div>
             <p className={styles.info}>Made by Damir, using React and Vite</p>
         </>

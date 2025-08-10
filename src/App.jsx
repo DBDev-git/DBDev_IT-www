@@ -2,6 +2,7 @@ import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
 import MainPage from './components/main-page/MainPage'
 import ProjectsPage from './components/projects-page/ProjectsPage'
+import ExtensionsPage from './components/extensions-page/ExtensionsPage'
 import PageNotFound from './components/page-not-found/PageNotFound'
 
 const App = () => {
@@ -26,6 +27,17 @@ const App = () => {
             <>
                 <Header page={p} />
                 <ProjectsPage />
+                <Footer />
+            </>
+        )
+    }
+
+    // Extensions
+    if (page == '/extensions.html') {
+        return (
+            <>
+                <Header page={p} />
+                <ExtensionsPage />
                 <Footer />
             </>
         )
